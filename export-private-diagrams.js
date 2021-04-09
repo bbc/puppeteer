@@ -37,7 +37,7 @@ const headless = true;
 const filenameSuffix = 'structurizr-' + workspaceId + '-';
 
 (async () => {
-  const browser = await puppeteer.launch({ignoreHTTPSErrors: true, headless: true});
+  const browser = await puppeteer.launch({ignoreHTTPSErrors: true, headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
 
   await page.goto(structurizrUrl + '/dashboard', { waitUntil: 'networkidle2' });
