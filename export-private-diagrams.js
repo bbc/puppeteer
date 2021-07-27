@@ -37,14 +37,18 @@ const headless = true;
 const filenameSuffix = 'structurizr-' + workspaceId + '-';
 
 (async () => {
-  const browser = await puppeteer.launch({ignoreHTTPSErrors: true, headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
+  const browser = await puppeteer.launch({
+    ignoreHTTPSErrors: true,
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
 
   await page.goto(structurizrUrl + '/dashboard', { waitUntil: 'networkidle2' });
   await page.type('#username', username);
   await page.type('#password', password);
   await page.keyboard.press('Enter');
-  await page.waitForSelector('div.dashboardMetaData');
+  await page.waitForSelector('div#unstarredWorkspaces');
 
   await page.goto(url, { waitUntil: 'domcontentloaded' });
   await page.waitForFunction('structurizr.scripting.isDiagramRendered() === true');
