@@ -34,7 +34,7 @@ const url = structurizrUrl + '/workspace/' + workspaceId + '/diagrams';
 const ignoreHTTPSErrors = false;
 const headless = true;
 
-const filenameSuffix = 'structurizr-' + workspaceId + '-';
+const filenameSuffix = 'structurizr-';
 
 (async () => {
   const browser = await puppeteer.launch({
