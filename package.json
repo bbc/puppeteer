@@ -1,0 +1,24 @@
+{
+  "name": "structurizr-puppeteer",
+  "version": "1.0.0",
+  "description": "A BBC fork and hopefully enhancement of https://github.com/structurizr/puppeteer",
+  "main": "export-diagrams.js",
+  "dependencies": {
+    "puppeteer-core": "^13.7.0",
+    "puppeteer": "^13.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/puppeteer.git"
+  },
+  "author": "BBC",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bbc/puppeteer/issues"
+  },
+  "homepage": "https://github.com/bbc/puppeteer#readme"
+}
