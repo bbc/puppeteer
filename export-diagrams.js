@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-const FILENAME_SUFFIX = '';
+const FILENAME_SUFFIX = 'structurizr-';
 
 const PNG_FORMAT = 'png';
 const SVG_FORMAT = 'svg';
