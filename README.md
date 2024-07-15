@@ -1,4 +1,4 @@
-# Due to the removal of Structurizr 1.0.0 we have archived this repo as the scripts no longer work on a free cloud-hosted account
+# Due to the removal of Structurizr 1.0.0 we have archived this repo as the scripts no longer work on a free cloud-hosted account (see: [RMSERVICES-7227](https://jira.dev.bbc.co.uk/browse/RMSERVICES-7227) for more details)
 # Structurizr Puppeteer
 
 This repo contains some Node.js examples of how to script and automate parts of Structurizr Lite/on-premises/cloud service using Puppeteer (and headless Chrome) from the command line, perhaps as a part of your build process.
